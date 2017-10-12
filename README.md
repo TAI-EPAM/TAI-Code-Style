@@ -4,7 +4,9 @@
 
 Copy ```intellij-java-tai-style.xml``` into your ```config/codestyles``` folder in your IntelliJ settings folder. 
 
-Under ```Settings(or Preferences) -> Editor -> Code Style``` open ```Scheme -> Setting Wheel -> Import Scheme -> Intellij IDEA code style XML``` and then select our XML code style file.
+Under ```Settings (Preferences) -> Editor -> Code Style``` open ```Scheme -> Setting Wheel -> Import Scheme -> Intellij IDEA code style XML``` and then select our XML code style file.
+
+Press ```Apply -> OK``` and simply enjoy with a single press of ```Ctrl (Cmd) + Alt + L``` :)
 
 ## Useful links
 

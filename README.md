@@ -23,9 +23,24 @@ Press ```Apply -> OK``` and simply enjoy with a single press of ```Ctrl (Cmd) + 
 * The highest level packages in the project should reflect the various application "layers". It is
  called *package-by-layer* style.
   For example, ```com.epam.services```, ```com.epam.dao```, ```com.epam.util```.
+  
+## Tests naming convention
+
+Test method names should follow this naming convention: **MethodName_StateUnderTest_ExpectedBehavior**
+
+For example:
+* login_CorrectCredentials_StatusOk
+* login_IncorrectEmail_StatusBadRequest
+* save_SimpleCase_Saved
+* delete_SimpleStep_Deleted
+* getSuit_SimpleSuit_ReturnExpectedSuitDTO
+* getSuit_NullSuit_NotFoundException
+* visit_CommonWebElementGroupWithWrongValue_Invalid
+* visit_ComplexWebElementGroupWithOneUniquenessValue_Valid
 
 ## Useful links
 
 * Where to find raw xml code style file: https://raw.githubusercontent.com/TAI-EPAM/TAI-Code-Style/master/intellij-java-tai-style.xml
 
 * Where to find config folder: https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs
+

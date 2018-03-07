@@ -38,6 +38,22 @@ For example:
 * visit_CommonWebElementGroupWithWrongValue_Invalid
 * visit_ComplexWebElementGroupWithOneUniquenessValue_Valid
 
+## DB constraint naming convention
+
+Constraint names in changeSet should follow this naming convention: **PrefixForConstraint_TableWithConstraint_ObjectRelatedToConstraint**
+
+List of prefixes:
+* fk_ - foreign key
+* idx_ - index
+* nn_ - not null
+* pk_ - primary key
+* ck_ - check
+* uq_ - unique
+
+For example:
+* fk_suitCase_case - prefix, table with foreign key, table with referenced column
+* idx_suitCase_id - prefix, table with index, indexed column 
+
 ## Useful links
 
 * Where to find raw xml code style file: https://raw.githubusercontent.com/TAI-EPAM/TAI-Code-Style/master/intellij-java-tai-style.xml

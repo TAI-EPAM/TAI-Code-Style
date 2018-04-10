@@ -54,6 +54,18 @@ For example:
 * fk_suitCase_case - prefix, table with foreign key, table with referenced column
 * idx_suitCase_id - prefix, table with index, indexed column 
 
+## DTO naming convention
+
+EntityName + action + "DTO" where action is one of CRUD operations (Create, Read, Update, Delete).
+If action is non-crud operation, try to express action in CRUD way.
+i.e. instead of /updateUserRole use /updateUser with new role passed as parameter.
+
+DTO would be named "UserUpdateDTO",
+"UserCreateDTO", "UserReadDTO" (UserDeleteDTO might be only necessary
+when passing additional parameters i.e. reason).
+And for non-crud operations (if any) "UserRefreshDTO"
+(action here is as an example Refresh )
+
 ## Useful links
 
 * Where to find raw xml code style file: https://raw.githubusercontent.com/TAI-EPAM/TAI-Code-Style/master/intellij-java-tai-style.xml
